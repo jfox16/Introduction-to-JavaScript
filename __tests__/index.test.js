@@ -82,5 +82,22 @@ describe('gradeFunction', ()=>{
         expect(functions.grade(59)).toBe('you got an F');
     })
 });
+describe('vowelCounter', ()=>{
+    it('Blank string expect 0 vowels', ()=>{
+        expect(functions.vowelCounter('')).toBe(0);
+    })
+    it('aaa expect 0 vowels', ()=>{
+        expect(functions.vowelCounter('ttt')).toBe(0);
+    })
+    it('bob expect 1 vowel', ()=>{
+        expect(functions.vowelCounter('bob')).toBe(1);
+    })
+    it('bob expect 2 vowels', ()=>{
+        expect(functions.vowelCounter('door')).toBe(2);
+    })
+    it('bajehuiavolahebunimo expect 11 vowels', ()=>{
+        expect(functions.vowelCounter('bajehuiavolahebunimo')).toBe(11);
+    })
+});
 
 
